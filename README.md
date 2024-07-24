@@ -20,3 +20,4 @@ Basic features include:
 The server will be open at http://localhost:3000/
 
 Made as a part of ["The Complete 2024 Web Development Bootcamp"](https://www.udemy.com/course/the-complete-web-development-bootcamp/) by Dr.Angela Yu
+Technologies used: Bootstrap, NodeJS, ExpressJS, Embedded JavaScript (EJS)
