@@ -1,0 +1,14 @@
+<%- include("partials/head-section.ejs") %>
+<body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="body-heading">Update Post:</h1>
+    <form action="/submit-update" method="POST" class="margins">
+        <label for="post-title">Post title:</label><br>
+        <% let currentPost = posts[postId] %>
+        <input type="text" name="postTitle" placeholder="Post title goes here" value="<%= currentPost.title %>"><br>
+        <label for="post-body">Body:</label><br>
+        <textarea id="post-body" name="postBody" placeholder="Enter blog text here" rows="5" cols="50"><%= currentPost.postBody %></textarea><br>
+        <input type="submit" value="Update" class="btn btn-primary submit-btn">
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<%- include("partials/head-section.ejs") %>
+<body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="body-heading">Posts</h1>
+    <ul>
+        <% if (locals.posts.length !== 0) { %>
+            <% for (let i = 0; i < posts.length; i++) { %>
+                <li><a href="/post-view/<%= posts[i].postId %>"> <%= posts[i].title %></a></li>
+            <% } %>
+        <% } else { %>
+            <h3>There are no posts to display</h3>
+        <% } %>
+    </ul>
+</body>
+</html>

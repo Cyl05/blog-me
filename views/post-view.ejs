@@ -1,0 +1,11 @@
+<%- include("partials/head-section.ejs") %>
+<body>
+    <%- include("partials/header.ejs") %>
+    <h1 class="body-heading"><%= postTitle %></h1>
+    <div class="margins mt-3">
+        <p><%= postBody %></p>
+        <a href="/edit-post"><button class="btn btn-primary">Edit</button></a>
+        <a href="/delete-post"><button class="btn btn-danger">Delete</button></a>
+    </div>
+</body>
+</html>
