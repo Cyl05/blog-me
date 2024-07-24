@@ -1,6 +1,4 @@
 import express from "express";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 
 const app = express();
 const port = 3000;
@@ -11,7 +9,6 @@ let postId;
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.get("/", (req, res) => {
     postId = null;
@@ -28,8 +25,6 @@ app.get("/create", (req, res) => {
 });
 
 app.post("/submit-create", (req, res) => {
-    let newPostTitle = req.body.postTitle;
-    let newPostDesc = req.body.postBody;
     let post = {
         postId: `post-${id}`,
         title: req.body.postTitle,
