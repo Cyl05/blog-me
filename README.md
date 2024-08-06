@@ -1,6 +1,6 @@
 # Blog.me 💬
 
-Blog.me is a simple web app for posting blogs about anything you want! 
+Blog.me is a simple CRUD web app for posting blogs about anything you want! 
 
 ## Features
 Basic features include:
